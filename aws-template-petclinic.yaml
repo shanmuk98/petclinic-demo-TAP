@@ -14,7 +14,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       SubnetId: !Select [0, !Ref ELBSubnet]
-      ImageId: ami-02354e95b39ca8dec
+      ImageId:  ami-02354e95b39ca8dec
       InstanceType: t2.micro
       KeyName: !Ref SSHKey
       SecurityGroupIds:
@@ -34,7 +34,7 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       SubnetId: !Select [1, !Ref ELBSubnet]
-      ImageId: ami-02354e95b39ca8dec
+      ImageId:  ami-02354e95b39ca8dec
       InstanceType: t2.micro
       KeyName: !Ref SSHKey
       SecurityGroupIds:
